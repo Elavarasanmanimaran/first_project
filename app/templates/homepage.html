@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+    <center><h2>Sum of two numbers</h2>
+    <br><br>
+    <form action="{% url 'add' %}" method="POST" >
+        {% csrf_token %}
+        <label for="">Enter First number:</label>
+        <input name="n1" type="text">
+        <br><br>
+        <label for="">Enter Second number:</label>
+        <input name="n2" type="text">
+        <br><br>
+        <button type="submit">sumbit</button>
+    </form>
+</center>
+</fieldset>
+</body>
+</html>
